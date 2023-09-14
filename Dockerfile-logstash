@@ -1,0 +1,5 @@
+# Use the official Logstash image as the base image
+FROM docker.elastic.co/logstash/logstash:7.10.0
+
+# Copy your Logstash configuration file into the container
+COPY logstash.conf /usr/share/logstash/pipeline/logstash.conf
